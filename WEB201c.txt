@@ -1,0 +1,216 @@
+CSS Command
+Author : StarCi
+1. Với các tag <p>, <a>, <h1> tới <h6> (văn 
+bản)
+I. color: #Chỉnh màu của chữ
+color: black; #Chữ màu đen
+
+II. font-size: #Chỉnh phông chữ
+font-size:50px; #kich thước Phông chữ 50px
+
+III. text-decoration: #Chỉnh cách trang trí cho chữ
+text-decoration: none; #Xóa tất cả trang trí
+text-decoration: underline; #Thêm gạch chân
+
+IV. font-weight: #Chỉnh kích thước chữ
+font-weight:bolder; #In đậm chữ
+
+V. font-style: #Chỉnh dáng chữ
+font-style : italic ; #Chữ in nghiêng
+
+VI. text-align : #Sắp xếp chữ
+text-align: center; #Đặt chữ vào giữa
+text-align : left ; #Đặt chữ vào lề trái
+text-align: rigt; #Đặt chữ vào lề phải
+----------------------------------------------------------------------------------------------------------------------------------------
+2. Với các tag <div> và một số tag khác
+mang ý nghĩa không gian (nền, viền và 
+căn lề)
+I. background-color: #Chỉnh màu cho nền
+background-color: black; #Nền màu đen
+
+II. border: #Tạo viền
+border : 5px solid black ; #Tạo viền đen 5px;
+
+III. padding (-top, -bot, -right, -left): #Tăng kích thước nền, 
+từ đó sẽ tăng kích thước của background.
+padding-top:5px; #Tăng nền trên lên 5px;
+padding-right:-10px; #Giảm nền phải đi 10px;
+
+IV. margin (-top, -bot, -right, -left): #Tăng kích thước căn 
+lề, từ đó sẽ tăng kích thước của class hiện tại và các 
+class khác hoặc các lề của màn hình.
+margin-top:5px; #Tăng lề trên lên 5px;
+margin-right:-10px; #Giảm lề phải đi 10px;
+
+V. border-radius: #Bo tròn các góc của viền
+border-radius : 100% ; #Viền tròn 100%
+border-radius : 5% ;#Viền được bo tròn 5%
+border-radius : 15px ; #Viền được bo tròn 15px ;
+(Lưu ý số càng lớn thì càng tròn)
+
+VI. box-shadow : #Tạo độ bóng cho viền;
+Cấu trúc: 
+box-shadow: none;
+hoặc
+box-shadow: h-offset |v-offset| blur |spread |color
+# Trong đó, h-offset (horizontal - ngang): kích thước bóng theo 
+chiều ngang (hướng trái phải tùy thuộc vào dấu)
+box-shadow: 5px | | | | là đổ bóng về phía bên phải
+box-shodow: -5px| | | | là đổ bóng về phía bên trái
+# v-offset (vertical – dọc): kích thước bóng theo chiều dọc
+(hướng trên dưới tùy thuộc vào dấu)
+box-shadow: | 5px| | | là đổ bóng về phía xuống dưới
+box-shodow: | -5px| | | là đổ bóng về phía lên trên
+# blur, spread là độ mờ và độ lan rộng, các giá trị này bắt buộc 
+phải dương, và số càng lớn thì hiệu quả càng cao.
+# color là màu của bóng.
+# Nhớ rằng, có thể tạo nhiều bóng cùng một lúc
+Ví dụ
+box-shadow: 5px 5px 5px 5px green, -5px -5px 5px 5px cyan
+----------------------------------------------------------------------------------------------------------------------------------------
+3. Với các thẻ <ul> và <li> (danh sách)
+Trường hợp <ul>
+I. style: #Phong cách trang trí
+style : flex ; #Dàn cái list thành 1 hàng.
+# Thường thì style: flex sẽ kết hợp với
+justify-content: space-around;
+align-items: center;
+Trường hợp <li>
+I. list-style: #Phong cách của dấu liệt kê
+list-style: none; #Không có
+ list-style: X;, trong đó X sẽ nằm trong:
+----------------------------------------------------------------------------------------------------------------------------------------
+4. Với các thẻ <div> lớn mang ý nghĩa dàn trải 
+các class
+I. style: #Phong cách trang trí
+style : flex ; #Dàn cái list thành 1 hàng.
+# Thường thì style: flex sẽ kết hợp với
+justify-content: space-around;
+align-items: center;
+----------------------------------------------------------------------------------------------------------------------------------------
+5. Với <img> (ảnh)
+I. height : #Chiều cao
+height: 10%; #Ảnh có kích thước 10% so với giao diện;
+
+II. width: #Chiều rộng
+width: 100%; #Ảnh có kích thước 100% so với giao diện
+img-responsive: thu nho anh lai
+position-relative dieu chinh anh
+
+bootstrap link: 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+gan css vao html:
+
+<link rel="stylesheet" href="style.css">
+----------------------------------------------------------------------------------------------------------------------------------------
+Javascrip1: 
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text;
+  let person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+----------------------------------------------------------------------------------------------------------------------------------------
+CSS Responsive
+@media (max-width: 1140px) {}
+@media (max-width: 768px) and (min-width: 320px) {}
+@media (max-width: 768px) and (min-width: 320px) {
+    .section {
+        padding: 0 20px;
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------Object
+.fill {object-fit: fill;}
+.contain {object-fit: contain;}
+.cover {object-fit: cover;}
+.scale-down {object-fit: scale-down;}
+.none {object-fit: none;}
+----------------------------------------------------------------------------------------------------------------------------------------
+Tooltip
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>Basic Tooltip</h2>
+
+<p>Move the mouse over the text below:</p>
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+<p>Note that the position of the tooltip text isn't very good. Go back to the tutorial and continue reading on how to position the tooltip in a desirable way.</p>
+----------------------------------------------------------------------------------------------------------------------------------------
+Làm mờ ảnh:
+img {
+  opacity: 0.5;
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+z-index
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+Javascrip2:
+<h2>JavaScript Alert</h2>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  alert("I am an alert box!");
+}
+</script>	
+
+
+Chen js to html : <script src="myScript1.js"></script>
+
+
+position: relative; top:-20px chỉnh ảnh lên 20px
+height: calc(100%-20px) full khung ngắn đi 20px
+style: height: 300px nhỏ ảnh diid 300px
+
+
+css:
+.config1{
+Display: flex;
+Color: red;
+Font-weight: bold
+}
